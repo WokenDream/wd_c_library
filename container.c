@@ -9,7 +9,7 @@ struct wd_stack {
     size_t cap;
     size_t len;
     size_t ele_size;
-    char* array; // may be char*, will see
+    unsigned char* array;
 };
 
 struct wd_stack* create_stack(size_t ele_size) {
@@ -41,7 +41,7 @@ int ensure_stack_capacity(struct wd_stack* stack, size_t new_cap) {
         return -2;
     }
     stack->cap = new_cap;
-    return 0;
+    return new_cap;
 }
 
 int stack_push(struct wd_stack* stack, void* val) {
