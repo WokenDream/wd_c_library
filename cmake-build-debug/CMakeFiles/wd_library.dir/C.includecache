@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/tianqiliu/Developer/c/wd_library/container.c
+container.h
+/Users/tianqiliu/Developer/c/wd_library/container.h
+string.h
+/Users/tianqiliu/Developer/c/wd_library/string.h
+
+/Users/tianqiliu/Developer/c/wd_library/container.h
+stdlib.h
+-
+
+/Users/tianqiliu/Developer/c/wd_library/main.c
+stdio.h
+-
+
